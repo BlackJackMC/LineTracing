@@ -2936,7 +2936,7 @@
 	)
 	(wire
 		(pts
-			(xy 208.28 120.65) (xy 208.28 135.89)
+			(xy 208.28 146.05) (xy 208.28 120.65)
 		)
 		(stroke
 			(width 0)
@@ -3096,16 +3096,6 @@
 	)
 	(wire
 		(pts
-			(xy 208.28 135.89) (xy 218.44 135.89)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b87adc5c-7526-4575-9161-6dcc563ff7d4")
-	)
-	(wire
-		(pts
 			(xy 60.96 95.25) (xy 82.55 95.25)
 		)
 		(stroke
@@ -3186,7 +3176,7 @@
 	)
 	(wire
 		(pts
-			(xy 218.44 146.05) (xy 217.17 146.05)
+			(xy 218.44 146.05) (xy 208.28 146.05)
 		)
 		(stroke
 			(width 0)
@@ -3773,7 +3763,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x22_P2.54mm_Vertical"
+		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x22_P2.54mm_Vertical"
 			(at 55.88 97.79 0)
 			(effects
 				(font
@@ -4066,7 +4056,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x01_P2.54mm_Vertical"
+		(property "Footprint" ""
 			(at 223.52 146.05 0)
 			(effects
 				(font
@@ -4239,7 +4229,7 @@
 	)
 	(symbol
 		(lib_id "power:VCC")
-		(at 217.17 146.05 0)
+		(at 218.44 135.89 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4247,7 +4237,7 @@
 		(dnp no)
 		(uuid "38e37893-78e5-49a7-b6db-1866721733db")
 		(property "Reference" "#PWR011"
-			(at 217.17 149.86 0)
+			(at 218.44 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4256,7 +4246,7 @@
 			)
 		)
 		(property "Value" "VCC"
-			(at 215.138 146.05 0)
+			(at 216.408 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4264,7 +4254,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 217.17 146.05 0)
+			(at 218.44 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4273,7 +4263,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 217.17 146.05 0)
+			(at 218.44 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4282,7 +4272,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"VCC\""
-			(at 217.17 146.05 0)
+			(at 218.44 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4791,7 +4781,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x01_P2.54mm_Vertical"
+		(property "Footprint" ""
 			(at 223.52 154.94 0)
 			(effects
 				(font
@@ -4849,7 +4839,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "2200uF"
+		(property "Value" "C_Polarized"
 			(at 271.78 118.4909 0)
 			(effects
 				(font
@@ -4858,7 +4848,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:CP_Radial_D10.0mm_P5.00mm"
+		(property "Footprint" ""
 			(at 268.9352 121.92 0)
 			(effects
 				(font
@@ -5132,7 +5122,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x22_P2.54mm_Vertical"
+		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x22_P2.54mm_Vertical"
 			(at 171.45 97.79 0)
 			(effects
 				(font
@@ -6193,7 +6183,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x01_P2.54mm_Vertical"
+		(property "Footprint" ""
 			(at 223.52 135.89 0)
 			(effects
 				(font
@@ -6260,7 +6250,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x01_P2.54mm_Vertical"
+		(property "Footprint" ""
 			(at 223.52 161.29 0)
 			(effects
 				(font
