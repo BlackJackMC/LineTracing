@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "Button_Switch_THT")(type "KiCad")(uri "D:/Project/Personal/LineTracing/PCB/lib/Button_Switch_THT.pretty")(options "")(descr ""))
+)

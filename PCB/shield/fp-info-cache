@@ -1,4 +1,4 @@
-26422727830085756
+26378089750020632
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -1764,26 +1764,33 @@ Push Button
 4
 4
 Button_Switch_THT
-SW_CK_JS202011AQN_DPDT_Angled
-C&K sub miniature slide switch, JS series, DPDT, right angle, http://www.ckswitches.com/media/1422/js.pdf
-switch DPDT
-0
-6
-6
-Button_Switch_THT
-SW_CK_JS202011CQN_DPDT_Straight
-C&K sub miniature slide switch, JS series, DPDT, right angle, http://www.ckswitches.com/media/1422/js.pdf
-switch DPDT
-0
-6
-6
-Button_Switch_THT
 SW_CW_GPTS203211B
 SPST Off-On Pushbutton, 1A, 30V, CW Industries P/N GPTS203211B, http://switches-connectors-custom.cwind.com/Asset/GPTS203211BR2.pdf
 SPST button switch Off-On
 0
 2
 2
+Button_Switch_THT
+SW_CuK_JS202011AQN_DPDT_Angled
+CuK sub miniature slide switch, JS series, DPDT, right angle, http://www.ckswitches.com/media/1422/js.pdf
+switch DPDT
+0
+6
+6
+Button_Switch_THT
+SW_CuK_JS202011CQN_DPDT_Straight
+CuK sub miniature slide switch, JS series, DPDT, right angle, http://www.ckswitches.com/media/1422/js.pdf
+switch DPDT
+0
+6
+6
+Button_Switch_THT
+SW_CuK_OS102011MA1QN1_SPDT_Angled
+CuK miniature slide switch, OS series, SPDT, right angle, http://www.ckswitches.com/media/1428/os.pdf
+switch SPDT
+0
+5
+3
 Button_Switch_THT
 SW_DIP_SPSTx01_Piano_10.8x4.1mm_W7.62mm_P2.54mm
 1x-dip-switch SPST , Piano, row spacing 7.62 mm (300 mils), body size 10.8x4.1mm
@@ -2121,9 +2128,9 @@ switch SPDT
 7
 3
 Button_Switch_THT
-SW_E-Switch_EG1271_SPDT
-E-Switch sub miniature slide switch, EG series, SPDT, https://www.e-switch.com/wp-content/uploads/2022/06/EG.pdf
-switch SPDT
+SW_E-Switch_EG1271_DPDT
+E-Switch sub miniature slide switch, EG series, DPDT, http://spec_sheets.e-switch.com/specs/P040047.pdf
+switch DPDT
 0
 6
 6
@@ -2170,15 +2177,8 @@ switch single-pole double-throw spdt ON-ON illuminated LED
 6
 6
 Button_Switch_THT
-SW_NKK_NR01
-NKK Switches NR01 series rotary switch, 10.7 x 10.7mm. https://www.nkkswitches.com/pdf/NR01%20Rotaries.pdf
-NKK NR01 SP3T SP4T SP5T
-0
-10
-7
-Button_Switch_THT
 SW_PUSH-12mm
-Generic SW PUSH 12mm, e.g https://sten-eswitch-13110800-production.s3.amazonaws.com/system/asset/product_line/data_sheet/143/TL1100.pdf
+SW PUSH 12mm https://www.e-switch.com/system/asset/product_line/data_sheet/143/TL1100.pdf
 tact sw push 12mm
 0
 4
@@ -2191,22 +2191,8 @@ tact sw push 12mm
 4
 2
 Button_Switch_THT
-SW_PUSH_1P1T_6x3.5mm_H4.3_APEM_MJTP1243
-tactile push button, 6x3.5mm, https://www.apem.com/idec-apem/en_US/PCB-switches/Tactile-Switches/MJTP-6mm-through-hole/c/MJTP_6mm_through%20hole?page=1
-PHAP3362 6mm tact sw THT
-0
-2
-2
-Button_Switch_THT
-SW_PUSH_1P1T_6x3.5mm_H5.0_APEM_MJTP1250
-tactile push button, 6x3.5mm, https://www.apem.com/idec-apem/en_US/PCB-switches/Tactile-Switches/MJTP-6mm-through-hole/c/MJTP_6mm_through%20hole?page=1
-PHAP3362A 6mm tact sw THT
-0
-2
-2
-Button_Switch_THT
 SW_PUSH_6mm
-Generic 6mm SW tactile push button
+https://www.omron.com/ecb/products/pdf/en-b3f.pdf
 tact sw push 6mm
 0
 4
@@ -2296,69 +2282,6 @@ IP67 ultra-miniture horizontal
 5
 3
 Button_Switch_THT
-SW_Push_2P1T_Toggle_CK_PVA1xxH1xxxxxxV2
-momentary / push-push button, h=17.5mm C&K PVA1 https://www.ckswitches.com/media/1343/pva.pdf
-tact sw push PVA1 DPST
-0
-4
-4
-Button_Switch_THT
-SW_Push_2P1T_Toggle_CK_PVA1xxH2xxxxxxV2
-momentary / push-push button, h=23mm C&K PVA1 https://www.ckswitches.com/media/1343/pva.pdf
-tact sw push PVA1 DPST
-0
-4
-4
-Button_Switch_THT
-SW_Push_2P1T_Toggle_CK_PVA1xxH3xxxxxxV2
-momentary / push-push button, h=20.5mm C&K PVA1 https://www.ckswitches.com/media/1343/pva.pdf
-tact sw push PVA1 DPST
-0
-4
-4
-Button_Switch_THT
-SW_Push_2P1T_Toggle_CK_PVA1xxH4xxxxxxV2
-momentary / push-push button, h=15mm C&K PVA1 https://www.ckswitches.com/media/1343/pva.pdf
-tact sw push PVA1 DPST
-0
-4
-4
-Button_Switch_THT
-SW_Push_2P2T_Toggle_CK_PVA2OAH5xxxxxxV2
-momentary / push-push button, h=13mm C&K PVA2 https://www.ckswitches.com/media/1343/pva.pdf
-tact sw push PVA2 DPDT
-0
-6
-6
-Button_Switch_THT
-SW_Push_2P2T_Toggle_CK_PVA2xxH1xxxxxxV2
-momentary / push-push button, h=17.5mm C&K PVA2 https://www.ckswitches.com/media/1343/pva.pdf
-tact sw push PVA2 DPDT
-0
-6
-6
-Button_Switch_THT
-SW_Push_2P2T_Toggle_CK_PVA2xxH2xxxxxxV2
-momentary / push-push button, h=23mm C&K PVA2 https://www.ckswitches.com/media/1343/pva.pdf
-tact sw push PVA2 DPDT
-0
-6
-6
-Button_Switch_THT
-SW_Push_2P2T_Toggle_CK_PVA2xxH3xxxxxxV2
-momentary / push-push button, h=20.5mm C&K PVA2 https://www.ckswitches.com/media/1343/pva.pdf
-tact sw push PVA2 DPDT
-0
-6
-6
-Button_Switch_THT
-SW_Push_2P2T_Toggle_CK_PVA2xxH4xxxxxxV2
-momentary / push-push button, h=15mm C&K PVA2 https://www.ckswitches.com/media/1343/pva.pdf
-tact sw push PVA2 DPDT
-0
-6
-6
-Button_Switch_THT
 SW_Push_2P2T_Vertical_E-Switch_800UDP8P1A1M6
  right angle DPDT push button https://www.e-switch.com/system/asset/product_line/data_sheet/210/800U.pdf
 IP67 ultra-miniture horizontal
@@ -2366,42 +2289,7 @@ IP67 ultra-miniture horizontal
 8
 6
 Button_Switch_THT
-SW_SPST_Omron_B3F-40xx
-SW_THT_Tactile_Omron_B3F-40xx, 12x12 mm, Through hole switch from the B3F Family manufactured by Omron,  https://www.omron.com/ecb/products/pdf/en-b3f.pdf
-tactile switch THT button push B3F-4000 B3F-4050 B3F-4005 B3F-4055  
-0
-4
-2
-Button_Switch_THT
-SW_SPST_Omron_B3F-50xx
-SW_THT_Tactile_Omron_B3F-50xx, 12x12x7,3 mm, Through hole switch from the B3F Family manufactured by Omron,  https://www.omron.com/ecb/products/pdf/en-b3f.pdf
-tactile omron switch tht B3F-5000 B3F-5050 B3F-5001 B3F-5051  
-0
-4
-2
-Button_Switch_THT
-SW_SPST_Omron_B3F-315x_Angled
-tactile switch, 7.3mm x 6.25mm  x 7.4mm, right angle, https://omronfs.omron.com/en_US/ecb/products/pdf/en-b3f.pdf
-tactile switch Omron B3F right angle through hole
-0
-4
-2
-Button_Switch_THT
-SW_Slide-03_Wuerth-WS-SLTV_10x2.5x6.4_P2.54mm
-Wuerth, WS-SLTV, 450301014042, https://www.we-online.com/components/products/datasheet/450301014042.pdf
-switch single-pole opposite-side-connection double-throw SPDT würth wurth
-0
-3
-3
-Button_Switch_THT
-SW_Slide_SPDT_Angled_CK_OS102011MA1Q
-CuK miniature slide switch, OS series, SPDT, right angle, http://www.ckswitches.com/media/1428/os.pdf
-switch SPDT
-0
-5
-3
-Button_Switch_THT
-SW_Slide_SPDT_Straight_CK_OS102011MS2Q
+SW_Slide_1P2T_CK_OS102011MS2Q
 CuK miniature slide switch, OS series, SPDT, https://www.ckswitches.com/media/1428/os.pdf
 switch SPDT
 0
@@ -2413,7 +2301,7 @@ SW_TH_Tactile_Omron_B3F-10xx_https://www.omron.com/ecb/products/pdf/en-b3f.pdf
 Omron B3F-10xx
 0
 4
-2
+4
 Button_Switch_THT
 SW_Tactile_SKHH_Angled
 tactile switch 6mm ALPS SKHH right angle http://www.alps.com/prod/info/E/HTML/Tact/SnapIn/SKHH/SKHHLUA010.html
@@ -2463,27 +2351,6 @@ SW PUSH SMALL Tactile C&K
 0
 4
 2
-Button_Switch_THT
-SW_XKB_DM1-16UC-1
-1A 30V SPDT Micro Switch rated for one million cycles, W12.7xD5.7xH6.6, https://www.helloxkb.com/public/images/pdf/DMX-XXXC-X.pdf
-SPDT endstop limit switch clockwise hook lever XKB DM1-16UC-1
-0
-3
-3
-Button_Switch_THT
-SW_XKB_DM1-16UD-1
-1A 30V SPDT Micro Switch rated for one million cycles, W12.7xD5.7xH6.6, https://www.helloxkb.com/public/images/pdf/DMX-XXXD-X.pdf
-SPDT endstop limit switch anti-clockwise hook lever XKB DM1-16UD-1
-0
-3
-3
-Button_Switch_THT
-SW_XKB_DM1-16UP-1
-1A 30V SPDT Micro Switch rated for one million cycles, W12.7xD5.7xH6.6, https://www.helloxkb.com/public/images/pdf/DMX-XXXP-X.pdf
-SPDT endstop limit switch vertical hook lever XKB DM1-16UP-1
-0
-3
-3
 Buzzer_Beeper
 Buzzer_12x9.5RM7.6
 Generic Buzzer, D12mm height 9.5mm with RM7.6mm
