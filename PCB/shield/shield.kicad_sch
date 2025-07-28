@@ -5,186 +5,6 @@
 	(uuid "9a41b561-8e6b-4187-bd8f-1a6b5b887c54")
 	(paper "A4")
 	(lib_symbols
-		(symbol "Connector:Barrel_Jack"
-			(pin_names
-				(offset 1.016)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "J"
-				(at 0 5.334 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "Barrel_Jack"
-				(at 0 -5.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 1.27 -1.016 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 1.27 -1.016 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "DC Barrel Jack"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "DC power barrel jack connector"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "BarrelJack*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "Barrel_Jack_0_1"
-				(rectangle
-					(start -5.08 3.81)
-					(end 5.08 -3.81)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(polyline
-					(pts
-						(xy -3.81 -2.54) (xy -2.54 -2.54) (xy -1.27 -1.27) (xy 0 -2.54) (xy 2.54 -2.54) (xy 5.08 -2.54)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start -3.302 1.905)
-					(mid -3.9343 2.54)
-					(end -3.302 3.175)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start -3.302 1.905)
-					(mid -3.9343 2.54)
-					(end -3.302 3.175)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(rectangle
-					(start 3.683 3.175)
-					(end -3.302 1.905)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(polyline
-					(pts
-						(xy 5.08 2.54) (xy 3.81 2.54)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "Barrel_Jack_1_1"
-				(pin passive line
-					(at 7.62 2.54 180)
-					(length 2.54)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 7.62 -2.54 180)
-					(length 2.54)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Connector_Generic:Conn_01x02"
 			(pin_names
 				(offset 1.016)
@@ -2271,6 +2091,156 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Diode:1N5822"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "D"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "1N5822"
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Diode_THT:D_DO-201AD_P15.24mm_Horizontal"
+				(at 0 -4.445 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "http://www.vishay.com/docs/88526/1n5820.pdf"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "40V 3A Schottky Barrier Rectifier Diode, DO-201AD"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "diode Schottky"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "D*DO?201AD*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "1N5822_0_1"
+				(polyline
+					(pts
+						(xy -1.905 0.635) (xy -1.905 1.27) (xy -1.27 1.27) (xy -1.27 -1.27) (xy -0.635 -1.27) (xy -0.635 -0.635)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 1.27) (xy 1.27 -1.27) (xy -1.27 0) (xy 1.27 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 0) (xy -1.27 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "1N5822_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Regulator_Linear:L7805"
 			(pin_names
 				(offset 0.254)
@@ -3202,12 +3172,6 @@
 		(uuid "6381243d-9522-40d4-be7a-a5fbed172909")
 	)
 	(junction
-		(at 261.62 111.76)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "78d0beb3-699b-4ff1-bb8d-9ff92a37b799")
-	)
-	(junction
 		(at 137.16 72.39)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3224,6 +3188,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c509e214-2aec-42dc-8fe4-943e5a431838")
+	)
+	(junction
+		(at 99.06 39.37)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c932245a-88cd-4fa9-824a-8fa40f2f9f44")
 	)
 	(no_connect
 		(at 203.2 62.23)
@@ -3368,6 +3338,16 @@
 			(type default)
 		)
 		(uuid "19cf3eea-6bef-4a31-ad09-a3eba55a5b71")
+	)
+	(wire
+		(pts
+			(xy 99.06 39.37) (xy 99.06 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1ccb2aad-9af9-421d-80ef-77387e8f3a3c")
 	)
 	(wire
 		(pts
@@ -3751,6 +3731,16 @@
 	)
 	(wire
 		(pts
+			(xy 99.06 41.91) (xy 97.79 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9964de2c-b1dd-4ba5-8cff-4f6def06fd40")
+	)
+	(wire
+		(pts
 			(xy 166.37 80.01) (xy 137.16 80.01)
 		)
 		(stroke
@@ -3778,16 +3768,6 @@
 			(type default)
 		)
 		(uuid "a0781c54-c0bf-4c2b-a244-4ee626969177")
-	)
-	(wire
-		(pts
-			(xy 267.97 111.76) (xy 267.97 114.3)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a0fefd1c-5905-4c88-a6e9-ce96631e5743")
 	)
 	(wire
 		(pts
@@ -3838,6 +3818,16 @@
 			(type default)
 		)
 		(uuid "ad6b4721-24df-4f50-a2a2-b0c5d8e4d053")
+	)
+	(wire
+		(pts
+			(xy 99.06 39.37) (xy 104.14 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "adea10a6-e9c9-4bc6-aad9-aedde9539ef1")
 	)
 	(wire
 		(pts
@@ -4018,16 +4008,6 @@
 			(type default)
 		)
 		(uuid "ea43b5ed-dadf-4c02-aa74-472553a084ca")
-	)
-	(wire
-		(pts
-			(xy 261.62 111.76) (xy 267.97 111.76)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ea7eb50d-b9c1-419c-b2a4-d86a3716e877")
 	)
 	(wire
 		(pts
@@ -4581,6 +4561,74 @@
 		)
 	)
 	(symbol
+		(lib_id "Diode:1N5822")
+		(at 95.25 39.37 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0bab4980-4060-4ebb-8d0b-3b28faefc64b")
+		(property "Reference" "D1"
+			(at 95.5675 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1N5822"
+			(at 95.5675 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Diode_THT:D_DO-201AD_P15.24mm_Horizontal"
+			(at 95.25 34.925 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.vishay.com/docs/88526/1n5820.pdf"
+			(at 95.25 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "40V 3A Schottky Barrier Rectifier Diode, DO-201AD"
+			(at 95.25 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "7f5b270b-2578-4275-8204-d83e5d397904")
+		)
+		(pin "1"
+			(uuid "ebda8547-9947-4010-8959-771dbe0aab4a")
+		)
+		(instances
+			(project ""
+				(path "/9a41b561-8e6b-4187-bd8f-1a6b5b887c54"
+					(reference "D1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector_Generic:Conn_01x22")
 		(at 55.88 97.79 0)
 		(mirror y)
@@ -4875,7 +4923,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 261.62 116.84 0)
+		(at 91.44 41.91 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4884,7 +4932,7 @@
 		(fields_autoplaced yes)
 		(uuid "2ca2bfc0-a92b-412f-91f0-fbc65ce2712d")
 		(property "Reference" "#PWR013"
-			(at 261.62 123.19 0)
+			(at 91.44 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4893,7 +4941,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 261.62 121.92 0)
+			(at 91.44 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4901,7 +4949,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 261.62 116.84 0)
+			(at 91.44 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4910,7 +4958,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 261.62 116.84 0)
+			(at 91.44 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4919,7 +4967,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 261.62 116.84 0)
+			(at 91.44 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4931,7 +4979,7 @@
 			(uuid "2f37149f-7ef2-435e-9b31-2a11c2386735")
 		)
 		(instances
-			(project ""
+			(project "shield"
 				(path "/9a41b561-8e6b-4187-bd8f-1a6b5b887c54"
 					(reference "#PWR013")
 					(unit 1)
@@ -5401,7 +5449,7 @@
 	)
 	(symbol
 		(lib_id "power:VCC")
-		(at 261.62 111.76 0)
+		(at 104.14 39.37 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5410,7 +5458,7 @@
 		(fields_autoplaced yes)
 		(uuid "475c0ed5-17a4-4219-8c86-0f59cf18a35b")
 		(property "Reference" "#PWR014"
-			(at 261.62 115.57 0)
+			(at 104.14 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5419,15 +5467,16 @@
 			)
 		)
 		(property "Value" "VCC"
-			(at 261.62 106.68 0)
+			(at 104.14 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Footprint" ""
-			(at 261.62 111.76 0)
+			(at 104.14 39.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5436,7 +5485,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 261.62 111.76 0)
+			(at 104.14 39.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5445,7 +5494,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"VCC\""
-			(at 261.62 111.76 0)
+			(at 104.14 39.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5457,7 +5506,7 @@
 			(uuid "3721321b-64fd-4c67-a035-d850c90c6de3")
 		)
 		(instances
-			(project ""
+			(project "shield"
 				(path "/9a41b561-8e6b-4187-bd8f-1a6b5b887c54"
 					(reference "#PWR014")
 					(unit 1)
@@ -5603,74 +5652,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:Barrel_Jack")
-		(at 254 114.3 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "4d86c764-e10c-4f41-a55f-f1831c73cc9a")
-		(property "Reference" "J12"
-			(at 254 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Barrel_Jack"
-			(at 254 107.95 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Connector_BarrelJack:BarrelJack_GCT_DCJ200-10-A_Horizontal"
-			(at 255.27 115.316 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 255.27 115.316 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "DC Barrel Jack"
-			(at 254 114.3 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "d37dfb0f-a997-4964-9197-7de6a132905b")
-		)
-		(pin "1"
-			(uuid "6eeeb69f-b55a-4b40-8097-589d0db44481")
-		)
-		(instances
-			(project ""
-				(path "/9a41b561-8e6b-4187-bd8f-1a6b5b887c54"
-					(reference "J12")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:+5V")
 		(at 208.28 120.65 0)
 		(unit 1)
@@ -5738,7 +5719,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Polarized")
-		(at 267.97 118.11 0)
+		(at 97.79 45.72 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5747,7 +5728,7 @@
 		(fields_autoplaced yes)
 		(uuid "56ec0d21-6126-4dad-bed8-ceea6846dfa7")
 		(property "Reference" "C1"
-			(at 271.78 115.9509 0)
+			(at 101.6 43.5609 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5756,7 +5737,7 @@
 			)
 		)
 		(property "Value" "2200uF"
-			(at 271.78 118.4909 0)
+			(at 101.6 46.1009 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5765,7 +5746,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_THT:CP_Radial_D10.0mm_P5.00mm"
-			(at 268.9352 121.92 0)
+			(at 98.7552 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5774,7 +5755,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 267.97 118.11 0)
+			(at 97.79 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5783,7 +5764,7 @@
 			)
 		)
 		(property "Description" "Polarized capacitor"
-			(at 267.97 118.11 0)
+			(at 97.79 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5798,7 +5779,7 @@
 			(uuid "b31b8066-66d7-4930-8d01-179af746bdbd")
 		)
 		(instances
-			(project ""
+			(project "shield"
 				(path "/9a41b561-8e6b-4187-bd8f-1a6b5b887c54"
 					(reference "C1")
 					(unit 1)
@@ -6294,6 +6275,74 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector_Generic:Conn_01x02")
+		(at 86.36 39.37 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "87a684df-6e4a-4df6-b262-5e72d3d75a67")
+		(property "Reference" "J4"
+			(at 86.36 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Domino"
+			(at 86.36 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal"
+			(at 86.36 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 86.36 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 86.36 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e7764631-0286-4b08-ac8c-d434cd688fc5")
+		)
+		(pin "2"
+			(uuid "d369255b-33eb-4682-bccf-6ffd37821d4d")
+		)
+		(instances
+			(project "shield"
+				(path "/9a41b561-8e6b-4187-bd8f-1a6b5b887c54"
+					(reference "J4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector_Generic:Conn_01x22")
 		(at 171.45 97.79 0)
 		(unit 1)
@@ -6691,7 +6740,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 267.97 121.92 0)
+		(at 97.79 49.53 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6700,7 +6749,7 @@
 		(fields_autoplaced yes)
 		(uuid "a037d73d-1277-4109-a34f-e0e826572681")
 		(property "Reference" "#PWR015"
-			(at 267.97 128.27 0)
+			(at 97.79 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6709,7 +6758,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 267.97 127 0)
+			(at 97.79 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6717,7 +6766,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 267.97 121.92 0)
+			(at 97.79 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6726,7 +6775,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 267.97 121.92 0)
+			(at 97.79 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6735,7 +6784,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 267.97 121.92 0)
+			(at 97.79 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6747,7 +6796,7 @@
 			(uuid "877259e3-1db6-46f5-a0f6-133aeb34f593")
 		)
 		(instances
-			(project ""
+			(project "shield"
 				(path "/9a41b561-8e6b-4187-bd8f-1a6b5b887c54"
 					(reference "#PWR015")
 					(unit 1)
