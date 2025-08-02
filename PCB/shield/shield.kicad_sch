@@ -2241,10 +2241,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Regulator_Linear:L7805"
-			(pin_names
-				(offset 0.254)
-			)
+		(symbol "Regulator_Linear:AMS1117"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -2256,7 +2253,7 @@
 					)
 				)
 			)
-			(property "Value" "L7805"
+			(property "Value" "AMS1117"
 				(at 0 3.175 0)
 				(effects
 					(font
@@ -2265,19 +2262,8 @@
 					(justify left)
 				)
 			)
-			(property "Footprint" ""
-				(at 0.635 -3.81 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-						(italic yes)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "http://www.st.com/content/ccc/resource/technical/document/datasheet/41/4f/b3/b0/12/d4/47/88/CD00000444.pdf/files/CD00000444.pdf/jcr:content/translations/en.CD00000444.pdf"
-				(at 0 -1.27 0)
+			(property "Footprint" "Package_TO_SOT_SMD:SOT-223-3_TabPin2"
+				(at 0 5.08 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -2285,7 +2271,16 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Positive 1.5A 35V Linear Regulator, Fixed Output 5V, TO-220/TO-263/TO-252"
+			(property "Datasheet" "http://www.advanced-monolithic.com/pdf/ds1117.pdf"
+				(at 2.54 -6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "1A Low Dropout regulator, positive, adjustable output, SOT-223"
 				(at 0 0 0)
 				(effects
 					(font
@@ -2294,7 +2289,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "Voltage Regulator 1.5A Positive"
+			(property "ki_keywords" "linear regulator ldo adjustable positive"
 				(at 0 0 0)
 				(effects
 					(font
@@ -2303,7 +2298,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "TO?252* TO?263* TO?220*"
+			(property "ki_fp_filters" "SOT?223*TabPin2*"
 				(at 0 0 0)
 				(effects
 					(font
@@ -2312,10 +2307,10 @@
 					(hide yes)
 				)
 			)
-			(symbol "L7805_0_1"
+			(symbol "AMS1117_0_1"
 				(rectangle
-					(start -5.08 1.905)
-					(end 5.08 -5.08)
+					(start -5.08 -5.08)
+					(end 5.08 1.905)
 					(stroke
 						(width 0.254)
 						(type default)
@@ -2325,11 +2320,29 @@
 					)
 				)
 			)
-			(symbol "L7805_1_1"
+			(symbol "AMS1117_1_1"
 				(pin power_in line
 					(at -7.62 0 0)
 					(length 2.54)
-					(name "IN"
+					(name "VI"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 0 -7.62 90)
+					(length 2.54)
+					(name "ADJ"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2344,10 +2357,10 @@
 						)
 					)
 				)
-				(pin power_in line
-					(at 0 -7.62 90)
+				(pin power_out line
+					(at 7.62 0 180)
 					(length 2.54)
-					(name "GND"
+					(name "VO"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2355,24 +2368,6 @@
 						)
 					)
 					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_out line
-					(at 7.62 0 180)
-					(length 2.54)
-					(name "OUT"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3136,6 +3131,12 @@
 		(uuid "113d32ae-1c39-47c2-95ec-b70607194bd6")
 	)
 	(junction
+		(at 87.63 39.37)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "436390b9-af5a-4593-a00b-1c0cb7e1388b")
+	)
+	(junction
 		(at 138.43 160.02)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3471,6 +3472,16 @@
 	)
 	(wire
 		(pts
+			(xy 82.55 41.91) (xy 91.44 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3c79a86c-0924-4005-9b1f-e5f15b0f16b0")
+	)
+	(wire
+		(pts
 			(xy 60.96 123.19) (xy 81.28 123.19)
 		)
 		(stroke
@@ -3488,6 +3499,16 @@
 			(type default)
 		)
 		(uuid "3e6bdb80-2ca9-4f84-8db8-77e5721c6196")
+	)
+	(wire
+		(pts
+			(xy 82.55 39.37) (xy 87.63 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "452319ff-493b-415a-8e7d-69c42519c571")
 	)
 	(wire
 		(pts
@@ -3741,6 +3762,16 @@
 	)
 	(wire
 		(pts
+			(xy 87.63 39.37) (xy 91.44 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "996a653b-8281-47ce-84af-933f22b7be4f")
+	)
+	(wire
+		(pts
 			(xy 166.37 80.01) (xy 137.16 80.01)
 		)
 		(stroke
@@ -3838,6 +3869,16 @@
 			(type default)
 		)
 		(uuid "af0dcf78-12a8-4655-b84e-e6a5d06263eb")
+	)
+	(wire
+		(pts
+			(xy 87.63 33.02) (xy 87.63 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b2f7297d-47dd-44c4-8af6-9f807299dca8")
 	)
 	(wire
 		(pts
@@ -5609,7 +5650,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:CP_Radial_Tantal_D4.5mm_P2.50mm"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 			(at 162.2552 160.02 0)
 			(effects
 				(font
@@ -5788,72 +5829,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:VCC")
-		(at 123.19 29.21 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "60918ef3-32fd-4556-b9fe-9ecc38f3942c")
-		(property "Reference" "#PWR022"
-			(at 123.19 33.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "VCC"
-			(at 123.19 24.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 123.19 29.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 123.19 29.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"VCC\""
-			(at 123.19 29.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "4f534679-1c2e-4b87-8ef4-faf19bd3968f")
-		)
-		(instances
-			(project ""
-				(path "/9a41b561-8e6b-4187-bd8f-1a6b5b887c54"
-					(reference "#PWR022")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Connector_Generic:Conn_01x03")
 		(at 228.6 120.65 0)
 		(unit 1)
@@ -5994,8 +5969,8 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x02")
-		(at 118.11 29.21 0)
-		(mirror y)
+		(at 87.63 27.94 270)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6003,7 +5978,7 @@
 		(dnp no)
 		(uuid "694d7011-4c57-4513-b2f5-cc88ec3a2f72")
 		(property "Reference" "J15"
-			(at 118.11 38.1 0)
+			(at 78.74 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6011,7 +5986,7 @@
 			)
 		)
 		(property "Value" "Domino"
-			(at 118.11 35.56 0)
+			(at 81.28 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6019,7 +5994,7 @@
 			)
 		)
 		(property "Footprint" "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal"
-			(at 118.11 29.21 0)
+			(at 87.63 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6028,7 +6003,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 118.11 29.21 0)
+			(at 87.63 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6037,7 +6012,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 118.11 29.21 0)
+			(at 87.63 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6276,7 +6251,7 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x02")
-		(at 86.36 39.37 0)
+		(at 77.47 39.37 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -6285,7 +6260,7 @@
 		(dnp no)
 		(uuid "87a684df-6e4a-4df6-b262-5e72d3d75a67")
 		(property "Reference" "J4"
-			(at 86.36 48.26 0)
+			(at 77.47 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6293,7 +6268,7 @@
 			)
 		)
 		(property "Value" "Domino"
-			(at 86.36 45.72 0)
+			(at 77.47 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6301,7 +6276,7 @@
 			)
 		)
 		(property "Footprint" "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal"
-			(at 86.36 39.37 0)
+			(at 77.47 39.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6310,7 +6285,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 86.36 39.37 0)
+			(at 77.47 39.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6319,7 +6294,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 86.36 39.37 0)
+			(at 77.47 39.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6696,7 +6671,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:CP_Radial_Tantal_D4.5mm_P2.50mm"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 			(at 125.4252 160.02 0)
 			(effects
 				(font
@@ -6966,7 +6941,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 			(at 149.5552 160.02 0)
 			(effects
 				(font
@@ -7003,79 +6978,6 @@
 			(project "shield"
 				(path "/9a41b561-8e6b-4187-bd8f-1a6b5b887c54"
 					(reference "C4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Regulator_Linear:L7805")
-		(at 138.43 147.32 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "be74c1a2-ba6a-4ca3-bb1f-f6e2ada9611f")
-		(property "Reference" "U1"
-			(at 138.43 140.97 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "L7805"
-			(at 138.43 143.51 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_THT:TO-220-3_Vertical"
-			(at 139.065 151.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://www.st.com/content/ccc/resource/technical/document/datasheet/41/4f/b3/b0/12/d4/47/88/CD00000444.pdf/files/CD00000444.pdf/jcr:content/translations/en.CD00000444.pdf"
-			(at 138.43 148.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Positive 1.5A 35V Linear Regulator, Fixed Output 5V, TO-220/TO-263/TO-252"
-			(at 138.43 147.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "a32fe314-97b3-4038-ba6f-bf935073f31c")
-		)
-		(pin "1"
-			(uuid "0b8b5923-a3b9-4ffa-8767-f39823580979")
-		)
-		(pin "3"
-			(uuid "34398b24-3a36-4c13-bc56-7f2b38563caf")
-		)
-		(instances
-			(project ""
-				(path "/9a41b561-8e6b-4187-bd8f-1a6b5b887c54"
-					(reference "U1")
 					(unit 1)
 				)
 			)
@@ -7161,16 +7063,15 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 123.19 31.75 0)
+		(at 85.09 33.02 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "c5e88f8a-8965-4e83-8772-ab4a7fca3da2")
 		(property "Reference" "#PWR023"
-			(at 123.19 38.1 0)
+			(at 85.09 39.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7179,7 +7080,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 123.19 36.83 0)
+			(at 85.09 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7187,7 +7088,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 123.19 31.75 0)
+			(at 85.09 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7196,7 +7097,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 123.19 31.75 0)
+			(at 85.09 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7205,7 +7106,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 123.19 31.75 0)
+			(at 85.09 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7253,7 +7154,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 			(at 111.4552 160.02 0)
 			(effects
 				(font
@@ -7946,6 +7847,77 @@
 			(project ""
 				(path "/9a41b561-8e6b-4187-bd8f-1a6b5b887c54"
 					(reference "#PWR04")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Regulator_Linear:AMS1117")
+		(at 138.43 147.32 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "fe0ffd2e-e806-4b15-878f-791d069c1926")
+		(property "Reference" "U2"
+			(at 138.43 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "AMS1117"
+			(at 138.43 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-223-3_TabPin2"
+			(at 138.43 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.advanced-monolithic.com/pdf/ds1117.pdf"
+			(at 140.97 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "1A Low Dropout regulator, positive, adjustable output, SOT-223"
+			(at 138.43 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "db7eed5d-4a32-4f3c-95cb-f5b5025a77dc")
+		)
+		(pin "2"
+			(uuid "85d9c2ae-f067-46ac-a61e-b0ce01676b8e")
+		)
+		(pin "1"
+			(uuid "db69cce2-82e1-4585-9f48-1fe702a95040")
+		)
+		(instances
+			(project ""
+				(path "/9a41b561-8e6b-4187-bd8f-1a6b5b887c54"
+					(reference "U2")
 					(unit 1)
 				)
 			)
