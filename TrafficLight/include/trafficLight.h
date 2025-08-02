@@ -16,7 +16,8 @@ namespace TrafficLight
         bool state[3];
 
     public:
-        TrafficLight(int redPin, int greenPin, int yellowPin, bool state[3] = 0);
+        TrafficLight() {};
+        TrafficLight(int redPin, int greenPin, int yellowPin, bool state[3]);
         void toggleLight(Light light);
 
         bool getState(Light light) const;
