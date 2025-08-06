@@ -10921,14 +10921,6 @@
 		(uuid "10cc2d97-c383-4da7-ab83-340ecda36c0b")
 	)
 	(segment
-		(start 109.734 87.9602)
-		(end 109.714 87.9602)
-		(width 0.3)
-		(layer "F.Cu")
-		(net 11)
-		(uuid "6fd373ea-1805-43b9-9fe0-388c9fac1e8e")
-	)
-	(segment
 		(start 100.6602 97.034)
 		(end 109.734 87.9602)
 		(width 0.3)
@@ -11041,14 +11033,6 @@
 		(uuid "d2771cec-7fd7-4084-8362-23a34eb0ee50")
 	)
 	(segment
-		(start 158.2732 97.8308)
-		(end 157.8868 97.8308)
-		(width 0.3)
-		(layer "B.Cu")
-		(net 13)
-		(uuid "c4d0421e-5dde-400f-b37a-9e8208702975")
-	)
-	(segment
 		(start 177.7496 78.3544)
 		(end 158.2732 97.8308)
 		(width 0.3)
@@ -11159,14 +11143,6 @@
 		(layer "F.Cu")
 		(net 15)
 		(uuid "ed33a2a3-42e4-408f-850d-171976881214")
-	)
-	(segment
-		(start 158.2732 95.2908)
-		(end 157.8868 95.2908)
-		(width 0.3)
-		(layer "B.Cu")
-		(net 15)
-		(uuid "0955376e-fc69-4163-94e4-6b93795593df")
 	)
 	(segment
 		(start 177.7496 75.8144)
@@ -11553,14 +11529,6 @@
 		(uuid "d4432a1b-e7b6-49a6-aa6c-136f939c4924")
 	)
 	(segment
-		(start 135.2212 140.6568)
-		(end 135.5798 140.6568)
-		(width 0.3)
-		(layer "B.Cu")
-		(net 22)
-		(uuid "df73df79-be85-4cf0-a2ce-f862ab54dd2c")
-	)
-	(segment
 		(start 115.804 118.4402)
 		(end 119.8118 122.448)
 		(width 0.3)
@@ -11835,7 +11803,7 @@
 	(segment
 		(start 177.2158 136.4742)
 		(end 177.2158 138.5316)
-		(width 0.7)
+		(width 1.4)
 		(layer "F.Cu")
 		(net 46)
 		(uuid "340f8644-f520-46ff-b1bd-cf8865f42497")
@@ -11843,7 +11811,7 @@
 	(segment
 		(start 170.434 129.6924)
 		(end 177.2158 136.4742)
-		(width 0.7)
+		(width 1.4)
 		(layer "F.Cu")
 		(net 46)
 		(uuid "a6abdf08-1f91-4567-83ac-f1eceab306a6")
@@ -11851,7 +11819,7 @@
 	(segment
 		(start 170.434 121.7422)
 		(end 164.592 127.5842)
-		(width 0.7)
+		(width 1.4)
 		(layer "F.Cu")
 		(net 47)
 		(uuid "06074a3e-98d8-414d-8599-c60166c45e13")
@@ -11859,7 +11827,7 @@
 	(segment
 		(start 164.592 127.5842)
 		(end 164.592 138.5972)
-		(width 0.7)
+		(width 1.4)
 		(layer "F.Cu")
 		(net 47)
 		(uuid "54139bbd-aa5f-4654-bf8c-f9c9cec89c03")
