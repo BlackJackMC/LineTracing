@@ -1,4 +1,4 @@
 (sym_lib_table
   (version 7)
-  (lib (name "freetronics_symbols.pretty")(type "KiCad")(uri "F:/Personal/Project/2025/LineTracing/PCB/lib/freetronics_symbols.pretty.kicad_sym")(options "")(descr ""))
+  (lib (name "yaaj_dcdc_stepdown_lm2596")(type "Legacy")(uri "F:/Personal/Project/2025/LineTracing/PCB/lib/KiCad/yaaj_dcdc_stepdown_lm2596.lib")(options "")(descr ""))
 )

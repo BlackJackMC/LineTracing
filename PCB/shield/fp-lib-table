@@ -2,4 +2,5 @@
   (version 7)
   (lib (name "Button_Switch_THT_addon")(type "KiCad")(uri "D:/Project/Personal/LineTracing/PCB/lib/Button_Switch_THT.pretty")(options "")(descr ""))
   (lib (name "freetronics_footprints")(type "KiCad")(uri "F:/Personal/Project/2025/LineTracing/PCB/lib/freetronics_footprints.pretty")(options "")(descr ""))
+  (lib (name "KiCad")(type "KiCad")(uri "F:/Personal/Project/2025/LineTracing/PCB/lib/KiCad")(options "")(descr ""))
 )
