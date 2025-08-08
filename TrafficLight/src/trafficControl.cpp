@@ -49,6 +49,7 @@ namespace TrafficControl
             {
                 trafficLight.setState(arr[i], stateList[currentState].activePins[i]);
             }
+            prevTime = curTime;
             return true;
         }
         return false;
