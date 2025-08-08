@@ -1,6 +1,6 @@
 #pragma once
 #include <Arduino.h>
 
-void setupDistance();
+void setupDis(int trigPin, int echoPin);
 
-float getDistance();
+long getDis();

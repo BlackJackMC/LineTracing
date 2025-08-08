@@ -11,7 +11,7 @@ void setup()
     Serial.begin(9600);
     while (!Serial)
         ;
-    setupDistance(8, 9);
+    setupDis(8, 9);
     // bool tmp[3] = {0, 0, 0};
     // pinMode(5, OUTPUT);
     // pinMode(6, OUTPUT);
@@ -22,6 +22,7 @@ void setup()
 
 void loop()
 {
+    getDis();
     // if (light1.update())
     //     Serial.println(light1.getCurrentState());
     // light2.update();
