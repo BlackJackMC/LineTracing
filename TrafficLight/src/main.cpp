@@ -1,5 +1,6 @@
 #include <Arduino.h>
 #include "trafficControl.h"
+#include "distanceSensor.h"
 
 TrafficControl::TaskScheduler light1, light2;
 
@@ -7,15 +8,15 @@ bool one = false;
 
 void setup()
 {
-    delay(1000);
     Serial.begin(9600);
-    bool tmp[3] = {0, 0, 0};
-    pinMode(5, OUTPUT);
-    pinMode(6, OUTPUT);
-    pinMode(7, OUTPUT);
-    light1.init(0, millis(), TrafficLight::TrafficLight(5, 6, 7, tmp));
     while (!Serial)
         ;
+    setupDistance(8, 9);
+    // bool tmp[3] = {0, 0, 0};
+    // pinMode(5, OUTPUT);
+    // pinMode(6, OUTPUT);
+    // pinMode(7, OUTPUT);
+    // light1.init(0, millis(), TrafficLight::TrafficLight(5, 6, 7, tmp));
     // light2.init()
 }
 
