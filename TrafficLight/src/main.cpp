@@ -1,6 +1,6 @@
 #include <Arduino.h>
-#include "trafficControl.h"
-#include "distanceSensor.h"
+#include "TrafficControl.h"
+#include "DistanceSensor.h"
 
 TrafficControl::TaskScheduler light1, light2;
 

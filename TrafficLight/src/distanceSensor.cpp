@@ -1,4 +1,4 @@
-#include "distanceSensor.h"
+#include "DistanceSensor.h"
 
 const float SPEED_OF_SOUND = 0.0343; // cm/microsecond
 
