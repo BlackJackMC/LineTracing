@@ -4,7 +4,7 @@ const float SPEED_OF_SOUND = 0.0343; // cm/microsecond
 
 static int trig, echo;
 
-void setupDis(int trigPin, int echoPin)
+void setupDistance(int trigPin, int echoPin)
 {
     trig = trigPin;
     echo = echoPin;
@@ -12,7 +12,7 @@ void setupDis(int trigPin, int echoPin)
     pinMode(echo, INPUT);
 }
 
-long getDis()
+long getDistance()
 {
     digitalWrite(trig, LOW);
     delayMicroseconds(5);
