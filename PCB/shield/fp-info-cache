@@ -1,4 +1,4 @@
-26850478274107048
+26855780342853797
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -96676,6 +96676,13 @@ Resistor Radial_Power series Radial pin pitch 7.37mm 10W length 16.1mm width 9mm
 0
 2
 2
+Rocket Switch
+SW_RF1-1A-DC-2-R-1
+
+
+0
+2
+2
 Rotary_Encoder
 RotaryEncoder_Alps_EC11E-Switch_Vertical_H20mm
 Alps rotary encoder, EC11E... with switch, vertical shaft, http://www.alps.com/prod/info/E/HTML/Encoder/Incremental/EC11/EC11E15204A3.html
@@ -98958,6 +98965,13 @@ Logo WEEE
 0
 0
 0
+TB6612FNG
+MODULE_ROB-14450
+
+
+0
+16
+16
 TerminalBlock
 TerminalBlock_Altech_AK300-2_P5.00mm
 Altech AK300 terminal block, pitch 5.0mm, 45 degree angled, see http://www.mouser.com/ds/2/16/PCBMETRC-24178.pdf
@@ -107295,3 +107309,10 @@ XBEE_PRO
 0
 20
 20
+lm2596
+YAAJ_DCDC_StepDown_LM2596
+
+
+0
+4
+4
