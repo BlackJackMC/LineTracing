@@ -1,62 +1,58 @@
 #include "TrafficControl.h"
 
-namespace TrafficControl
+const int NUM_STATE = 5;
+TaskHandle_t south_task,west_task;
+
+template<int inum>
+void sendUpdate()
 {
+    TrafficLight<inum>::dispatch(Next());
+}
 
-    State::State(state_name stateId, int duration, bool activePins[3]) : stateId(stateId), duration(duration)
+void southTLTask(void *parameter)
+{
+    static constexpr int duration[NUM_STATE] = {7000,3000,10000,5000,3000};
+    int curState = 0;
+    TrafficLight<Direction::SOUTH>::start();
+    while (true)
     {
-        for (int i = 0; i < 3; i++)
-        {
-            this->activePins[i] = activePins[i];
-        }
+        vTaskDelay(duration[curState] / portTICK_PERIOD_MS);
+        curState = (curState + 1) % NUM_STATE;
+        sendUpdate<Direction::SOUTH>();
     }
+}
 
-#define PIN(a, b, c) \
-    (bool[3]) { a, b, c }
-    State stateList[8] = {
-        State(RED, 7000, PIN(1, 0, 0)),
-        State(RED_YELLOW, 3000, PIN(1, 1, 0)),
-        State(GREEN, 10000, PIN(0, 0, 1)),
-        State(GREEN_BLINK1, 500, PIN(0, 0, 1)),
-        State(GREEN_BLINK2, 500, PIN(0, 0, 1)),
-        State(GREEN_BLINK3, 500, PIN(0, 0, 1)),
-        State(GREEN_BLINK4, 500, PIN(0, 0, 1)),
-        State(YELLOW, 3000, PIN(0, 1, 0)),
-    };
-#undef PIN
-
-    void TaskScheduler::init(int startId, int curTime, TrafficLight::TrafficLight light)
+void westTLTask(void *parameter)
+{
+    static constexpr int duration[NUM_STATE] = {7000,3000,10000,5000,3000};
+    int curState = 3;
+    TrafficLight<Direction::WEST>::start();
+    while (true)
     {
-        prevTime = curTime;
-        currentState = startId;
-        trafficLight = light;
+        vTaskDelay(duration[curState] / portTICK_PERIOD_MS);
+        curState = (curState + 1) % NUM_STATE;
+        sendUpdate<Direction::WEST>();
     }
+}
 
-    bool TaskScheduler::update()
-    {
-        int curTime = millis();
-        if (curTime - prevTime >= stateList[currentState].duration)
-        {
-            currentState = (currentState + 1) % 6;
-            static TrafficLight::Light arr[3] = {TrafficLight::Light::RED,
-                                                 TrafficLight::Light::GREEN,
-                                                 TrafficLight::Light::YELLOW};
-            for (int i = 0; i < 3; i++)
-            {
-                trafficLight.setState(arr[i], 0);
-            }
-            for (int i = 0; i < 3; i++)
-            {
-                trafficLight.setState(arr[i], stateList[currentState].activePins[i]);
-            }
-            prevTime = curTime;
-            return true;
-        }
-        return false;
-    }
-
-    state_name TaskScheduler::getCurrentState()
-    {
-        return stateList[currentState].stateId;
-    }
+void startTL()
+{
+    xTaskCreatePinnedToCore(
+        southTLTask,        // Function
+        "SouthTLTask",      // Name
+        5000,               // Stack size
+        NULL,               // Parameter
+        1,                  // Priority
+        &south_task,        // Task handler
+        1                   // Core ID
+    );
+    xTaskCreatePinnedToCore(
+        westTLTask,         // Function
+        "westTLTask",       // Name
+        5000,               // Stack size
+        NULL,               // Parameter
+        1,                  // Priority
+        &west_task,         // Task handler
+        1                   // Core ID
+    );
 }

@@ -1,6 +1,13 @@
 #pragma once
 #include <Arduino.h>
 
-void setupDistance(int trigPin, int echoPin);
+namespace DisSensor 
+{
 
-long getDistance();
+    void setupDistance(int trigPin, int echoPin);
+
+    long getDistance();
+
+    bool detectCar();
+
+}
