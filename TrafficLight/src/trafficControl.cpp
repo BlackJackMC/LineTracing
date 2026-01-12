@@ -16,6 +16,7 @@ void southTLTask(void *parameter)
     TrafficLight<Direction::SOUTH>::start();
     while (true)
     {
+        Serial.println("South: Running");
         vTaskDelay(duration[curState] / portTICK_PERIOD_MS);
         curState = (curState + 1) % NUM_STATE;
         sendUpdate<Direction::SOUTH>();
@@ -29,14 +30,33 @@ void westTLTask(void *parameter)
     TrafficLight<Direction::WEST>::start();
     while (true)
     {
+        Serial.println("West: Running");
         vTaskDelay(duration[curState] / portTICK_PERIOD_MS);
         curState = (curState + 1) % NUM_STATE;
         sendUpdate<Direction::WEST>();
     }
 }
 
+void setTLPinMode(int red,int yellow,int green)
+{
+    pinMode(red,OUTPUT);
+    pinMode(yellow,OUTPUT);
+    pinMode(green,OUTPUT);
+}
+
 void startTL()
 {
+    setTLPinMode(
+        static_cast<int>(Pin_South::RED_PIN),
+        static_cast<int>(Pin_South::YELLOW_PIN),
+        static_cast<int>(Pin_South::GREEN_PIN)
+    );
+    setTLPinMode(
+        static_cast<int>(Pin_West::RED_PIN),
+        static_cast<int>(Pin_West::YELLOW_PIN),
+        static_cast<int>(Pin_West::GREEN_PIN)
+    );
+
     xTaskCreatePinnedToCore(
         southTLTask,        // Function
         "SouthTLTask",      // Name

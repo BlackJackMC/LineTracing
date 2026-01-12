@@ -2,6 +2,11 @@
 
 const int BLINK_DELAY = 500;
 
+void transitionDebug() 
+{
+    Serial.println("Transition complete");
+}
+
 // Default entry
 template<int inum>
 void TrafficLight<inum>::resetOutput()
@@ -16,7 +21,7 @@ template<int inum>
 void Red<inum>::react(Next const &event)
 {
     using base = TrafficLight<inum>;
-    base::template transit<RedYellow<inum>>();
+    base::template transit<RedYellow<inum>>(transitionDebug);
 }
 template<int inum>
 void Red<inum>::entry()
@@ -30,7 +35,7 @@ template<int inum>
 void RedYellow<inum>::react(Next const &event)
 {
     using base = TrafficLight<inum>;
-    base::template transit<Green<inum>>();
+    base::template transit<Green<inum>>(transitionDebug);
 }
 template<int inum>
 void RedYellow<inum>::entry()
@@ -45,7 +50,7 @@ template<int inum>
 void Green<inum>::react(Next const &event)
 {
     using base = TrafficLight<inum>;
-    base::template transit<GreenBlink<inum>>();
+    base::template transit<GreenBlink<inum>>(transitionDebug);
 }
 template<int inum>
 void Green<inum>::entry()
@@ -72,7 +77,7 @@ template<int inum>
 void GreenBlink<inum>::react(Next const &event)
 {
     using base = TrafficLight<inum>;
-    base::template transit<Yellow<inum>>();
+    base::template transit<Yellow<inum>>(transitionDebug);
 }
 template<int inum>
 void GreenBlink<inum>::entry()
@@ -99,7 +104,7 @@ template<int inum>
 void Yellow<inum>::react(Next const &event)
 {
     using base = TrafficLight<inum>;
-    base::template transit<RedYellow<inum>>();
+    base::template transit<Red<inum>>(transitionDebug);
 }
 template<int inum>
 void Yellow<inum>::entry()

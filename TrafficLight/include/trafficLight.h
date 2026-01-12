@@ -19,35 +19,32 @@ enum Direction
 
 enum class Pin_South
 {
-    RED_PIN = 4,
-    YELLOW_PIN = 16,
-    GREEN_PIN = 17,
+    RED_PIN = 12,
+    YELLOW_PIN = 14,
+    GREEN_PIN = 27,
 };
 
 enum class Pin_West
 {
-    RED_PIN = 5,
-    YELLOW_PIN = 18,
-    GREEN_PIN = 19,
+    RED_PIN = 26,
+    YELLOW_PIN = 25,
+    GREEN_PIN = 33,
 };
 
 // Events
 
 struct Next : tinyfsm::Event{};
 
-// Light Pin Declaration
-
 // Traffic Light FSM
 template<int inum>
 class TrafficLight : public tinyfsm::Fsm< TrafficLight<inum> >
 {
-protected:
-    static constexpr int pin[3] = {
+public:
+    inline static constexpr int pin[3] = { // Pls How do I rework this
         inum == Direction::SOUTH ? static_cast<int>(Pin_South::RED_PIN) : static_cast<int>(Pin_West::RED_PIN),
         inum == Direction::SOUTH ? static_cast<int>(Pin_South::YELLOW_PIN) : static_cast<int>(Pin_West::YELLOW_PIN),
         inum == Direction::SOUTH ? static_cast<int>(Pin_South::GREEN_PIN) :static_cast<int>(Pin_West::GREEN_PIN)
     }; // R - G - Y
-public:
 
     // Helper functions
 
