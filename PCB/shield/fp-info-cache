@@ -1,4 +1,4 @@
-26855780342853797
+26852535226616498
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -70216,6 +70216,13 @@ Yellow 5381 Series LED
 0
 2
 2
+MP1584EN
+MP1584EN
+MP1584EN Adjustable Buck Converter 12V-24V to 5V 3A
+
+0
+8
+8
 Module
 A20_OLINUXINO_LIME2
 A20 Olinuxino LIME2, 1.2GHz, 512-1024MB RAM, Micro-SD, NAND or eMMC, 1000Mbit Ethernet
@@ -93239,6 +93246,13 @@ Skyworks
 0
 7
 7
+RF1-1A-DC-2-R-1
+SW_RF1-1A-DC-2-R-1
+
+
+0
+2
+2
 RF_Antenna
 AVX_M620720
 868Mhz, 915Mhz ISM antenna, 6 x 2 x 1.08mm, http://datasheets.avx.com/ethertronics/AVX-E_M620720.pdf
@@ -96676,13 +96690,6 @@ Resistor Radial_Power series Radial pin pitch 7.37mm 10W length 16.1mm width 9mm
 0
 2
 2
-Rocket Switch
-SW_RF1-1A-DC-2-R-1
-
-
-0
-2
-2
 Rotary_Encoder
 RotaryEncoder_Alps_EC11E-Switch_Vertical_H20mm
 Alps rotary encoder, EC11E... with switch, vertical shaft, http://www.alps.com/prod/info/E/HTML/Encoder/Incremental/EC11/EC11E15204A3.html
@@ -96844,27 +96851,6 @@ rotary encoder illuminated switch vertical
 0
 9
 8
-SI2300DS
-SOT-23_TO-236_VIS
-
-SI2308CDS-T1-GE3 
-0
-3
-3
-SI2300DS
-SOT-23_TO-236_VIS-L
-
-SI2308CDS-T1-GE3 
-0
-3
-3
-SI2300DS
-SOT-23_TO-236_VIS-M
-
-SI2308CDS-T1-GE3 
-0
-3
-3
 Sensor
 ASAIR_AM2302_P2.54mm_Lead2.75mm_TabDown
 Temperature and humidity module, http://akizukidenshi.com/download/ds/aosong/AM2302.pdf
