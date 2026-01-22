@@ -5,4 +5,6 @@
   (lib (name "TB6612FNG")(type "KiCad")(uri "${KIPRJMOD}/lib/TB6612FNG")(options "")(descr ""))
   (lib (name "RF1-1A-DC-2-R-1")(type "KiCad")(uri "${KIPRJMOD}/lib/RF1-1A-DC-2-R-1")(options "")(descr ""))
   (lib (name "MP1584EN")(type "KiCad")(uri "${KIPRJMOD}/lib/MP1584EN/MP1584EN.pretty")(options "")(descr ""))
+  (lib (name "SI2300DS")(type "KiCad")(uri "${KIPRJMOD}/lib/SI2300DS/footprints.pretty")(options "")(descr ""))
+  (lib (name "WeAct-ESP32-S3-A")(type "KiCad")(uri "${KIPRJMOD}/lib/esp32-s3-devkitc-1/WeAct-ESP32-S3-A.pretty/")(options "")(descr ""))
 )
