@@ -11,7 +11,7 @@ void sendUpdate()
 
 void southTLTask(void *parameter)
 {
-    static constexpr int duration[NUM_STATE] = {7000,3000,10000,5000,3000};
+    static constexpr int duration[NUM_STATE] = {7000,3000,10000,2000,3000};
     int curState = 0;
     TrafficLight<Direction::SOUTH>::start();
     while (true)
@@ -25,8 +25,8 @@ void southTLTask(void *parameter)
 
 void westTLTask(void *parameter)
 {
-    static constexpr int duration[NUM_STATE] = {7000,3000,10000,5000,3000};
-    int curState = 3;
+    static constexpr int duration[NUM_STATE] = {7000,3000,10000,2000,3000};
+    int curState = 2;
     TrafficLight<Direction::WEST>::start();
     while (true)
     {
@@ -73,6 +73,6 @@ void startTL()
         NULL,               // Parameter
         1,                  // Priority
         &west_task,         // Task handler
-        1                   // Core ID
+        0                   // Core ID
     );
 }

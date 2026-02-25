@@ -1,12 +1,15 @@
 #pragma once
-#include <Arduino.h>
-#include <esp_now.h>
-#include <WiFi.h>
 #include "env.h"
 
-struct message_t
-{
+struct Data {
+    int light_id;
+    int light_status;
 };
 
-bool setupESPNow(esp_now_send_cb_t callback);
-esp_err_t sendMessage(message_t message);
+void wifi_setup();
+
+void mqtt_connect();
+
+void esp_now_setup();
+
+void send_message();

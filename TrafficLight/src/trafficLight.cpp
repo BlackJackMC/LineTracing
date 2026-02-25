@@ -1,7 +1,5 @@
 #include "TrafficLight.h"
 
-const int BLINK_DELAY = 500;
-
 void transitionDebug() 
 {
     Serial.println("Transition complete");
@@ -66,9 +64,9 @@ void blinkTask(void *green_pin_raw)
     while (true)
     {
         digitalWrite(green_pin_casted,HIGH);
-        vTaskDelay(BLINK_DELAY / portTICK_PERIOD_MS);
+        vTaskDelay(BLINK_STEP_DURATION / portTICK_PERIOD_MS);
         digitalWrite(green_pin_casted,LOW);
-        vTaskDelay(BLINK_DELAY / portTICK_PERIOD_MS);
+        vTaskDelay(BLINK_STEP_DURATION / portTICK_PERIOD_MS);
     }
 }
 
