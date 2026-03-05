@@ -27026,7 +27026,7 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 147.32 148.59 0)
+		(at 143.51 146.05 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -27034,7 +27034,7 @@
 		(dnp no)
 		(uuid "8a3aea37-7899-4b8c-b03e-845af21a7008")
 		(property "Reference" "#PWR013"
-			(at 147.32 152.4 0)
+			(at 143.51 149.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27043,7 +27043,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 147.32 143.51 0)
+			(at 143.51 140.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27051,7 +27051,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 147.32 148.59 0)
+			(at 143.51 146.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27060,7 +27060,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 147.32 148.59 0)
+			(at 143.51 146.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27069,7 +27069,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 147.32 148.59 0)
+			(at 143.51 146.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27758,7 +27758,7 @@
 	)
 	(symbol
 		(lib_id "power:VCC")
-		(at 143.51 146.05 0)
+		(at 147.32 148.59 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -27767,7 +27767,7 @@
 		(fields_autoplaced yes)
 		(uuid "da38f65a-0090-42fb-8305-eb7f9d355a59")
 		(property "Reference" "#PWR05"
-			(at 143.51 149.86 0)
+			(at 147.32 152.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27776,7 +27776,7 @@
 			)
 		)
 		(property "Value" "VCC"
-			(at 143.51 140.97 0)
+			(at 147.32 143.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27784,7 +27784,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 143.51 146.05 0)
+			(at 147.32 148.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27793,7 +27793,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 143.51 146.05 0)
+			(at 147.32 148.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27802,7 +27802,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"VCC\""
-			(at 143.51 146.05 0)
+			(at 147.32 148.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
