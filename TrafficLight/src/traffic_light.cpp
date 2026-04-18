@@ -1,4 +1,4 @@
-#include "TrafficLight.h"
+#include "traffic_light.h"
 
 void transitionDebug() 
 {

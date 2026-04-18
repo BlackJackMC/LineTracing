@@ -1,8 +1,10 @@
-#include "Net.h"
+#include "net.h"
 #include "env.h"
+
 #include <Arduino.h>
 #include <WiFi.h>
 #include <PubSubClient.h>
+#include <WebSocketsClient.h>
 #include <esp_now.h>
 
 WiFiClient wifi_client;
@@ -11,16 +13,20 @@ PubSubClient mqtt_client(wifi_client);
 void wifi_setup()
 {
     delay(10);
+    
+    WiFi.mode(WIFI_AP);
+    Serial.printf("Broadcasting WiFi");
+    WiFi.softAP(WIFI_SSID, WIFI_PASS);
+    
+    // WiFi.mode(WIFI_STA);
+    // Serial.printf("Connecting WiFi");
+    // WiFi.begin(WIFI_SSID, WIFI_PASS);
 
-    Serial.printf("Connecting WiFi");
-    WiFi.begin(WIFI_SSID, WIFI_PASS);
-    while (WiFi.status() != WL_CONNECTED)
-    {
-        Serial.print(".");
-        delay(500);
-    }
-    Serial.printf("");
-    Serial.printf("WiFi connected");
+    // while (WiFi.status() != WL_CONNECTED)
+    // {
+    //     Serial.print(".");
+    //     delay(500);
+    // }
 }
 
 void mqtt_connect()
@@ -48,6 +54,8 @@ void on_data_sent(const uint8_t *mac_addr, esp_now_send_status_t status)
     Serial.println(status == ESP_NOW_SEND_SUCCESS ? "Delivery Success" : "Delivery Fail");
 }
 
+//======================================================//
+
 esp_now_peer_info peer_info;
 
 void esp_now_setup()
@@ -72,13 +80,25 @@ void esp_now_setup()
     }
 }
 
-void send_message(Data data)
-{
-    esp_err_t res = esp_now_send(RECEIVER_MAC, (uint8_t *)&data, sizeof(data));
-    if (result == ESP_OK) {
-    Serial.println("Sent with success");
-    }
-    else {
-        Serial.println("Error sending the data");
-    }
-}
+//======================================================//
+
+// WebSocketsClient websocket;
+
+// void webSocketEvent(WStype_t type, uint8_t * payload, size_t length) {
+//     switch(type) {
+//         case WStype_DISCONNECTED:
+//             Serial.printf("[WebSocket] Disconnected!\n");
+//             break;
+            
+//         case WStype_CONNECTED:
+//             Serial.printf("[WebSocket] Connected to url: %s\n", payload);
+            
+//             // Send a test message to the server once connected
+//             webSocket.sendTXT("Hello Server, this is ESP32!");
+//             break;
+//     }
+// }
+
+
+
+

@@ -1,8 +1,6 @@
 #pragma once
-#include "TrafficLight.h"
+#include "traffic_light.h"
 
 extern TaskHandle_t south_task,west_task;
-
-void sendUpdate(int inum);
 
 void startTL(void);

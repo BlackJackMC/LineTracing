@@ -19,16 +19,16 @@ enum Direction
 
 enum class Pin_South
 {
-    RED_PIN = 12,
-    YELLOW_PIN = 14,
-    GREEN_PIN = 27,
+    RED_PIN = 13,
+    YELLOW_PIN = 12,
+    GREEN_PIN = 14,
 };
 
 enum class Pin_West
 {
-    RED_PIN = 26,
-    YELLOW_PIN = 25,
-    GREEN_PIN = 33,
+    RED_PIN = 27,
+    YELLOW_PIN = 26,
+    GREEN_PIN = 25,
 };
 
 // Events

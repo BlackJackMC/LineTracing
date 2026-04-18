@@ -1,4 +1,7 @@
-#include "TrafficControl.h"
+#include "traffic_control.h"
+#include "Net.h"
+#include "global.h"
+#include <ArduinoJson.h>
 
 const int NUM_STATE = 5;
 TaskHandle_t south_task,west_task;
@@ -13,10 +16,17 @@ void southTLTask(void *parameter)
 {
     static constexpr int duration[NUM_STATE] = {7000,3000,10000,2000,3000};
     int curState = 0;
+    Data data;
+    data.type = 'l';
+    data.isSouth = 1;
     TrafficLight<Direction::SOUTH>::start();
     while (true)
     {
-        Serial.println("South: Running");
+        Serial.println("South: Running ");
+        
+        data.value = curState;
+        xQueueSend(msgQueue, &data, portMAX_DELAY);
+        
         vTaskDelay(duration[curState] / portTICK_PERIOD_MS);
         curState = (curState + 1) % NUM_STATE;
         sendUpdate<Direction::SOUTH>();
@@ -27,10 +37,17 @@ void westTLTask(void *parameter)
 {
     static constexpr int duration[NUM_STATE] = {7000,3000,10000,2000,3000};
     int curState = 2;
+    Data data;
+    data.type = 'l';
+    data.isSouth = 0;
     TrafficLight<Direction::WEST>::start();
     while (true)
     {
         Serial.println("West: Running");
+
+        data.value = curState;
+        xQueueSend(msgQueue, &data, portMAX_DELAY);
+
         vTaskDelay(duration[curState] / portTICK_PERIOD_MS);
         curState = (curState + 1) % NUM_STATE;
         sendUpdate<Direction::WEST>();
