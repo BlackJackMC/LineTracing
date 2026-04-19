@@ -1,0 +1,23 @@
+{
+    "name": "PlatformIO Dev Container",
+    "build": {
+        "dockerfile": "Dockerfile"
+    },
+    "customizations": {
+        "vscode": {
+            "settings": {
+                "terminal.integrated.defaultProfile.linux": "bash"
+            },
+            "extensions": [
+                "platformio.platformio-ide",
+                "ms-vscode.cpptools",
+                "ms-vscode.cpptools-extension-pack"
+            ]
+        }
+    },
+    "remoteUser": "vscode",
+    "postCreateCommand": "pio --version",
+    "runArgs": [
+        "--privileged"
+    ]
+}
